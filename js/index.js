@@ -59,5 +59,24 @@ const swipeGallery = () => {
 	});
 };
 
+const copyText = () => {
+	let copyList = document.querySelectorAll('.copy');
+
+	copyList.forEach(function (copyEl) {
+		copyEl.addEventListener('click', function () {
+			navigator.clipboard
+				.writeText(this.innerText)
+				.then(() => {
+					console.log('Скопировано:', this.innerText);
+					alert('Скопировано: ' + this.innerText);
+				})
+				.catch((err) => {
+					console.error('Failed to copy text: ', err);
+				});
+		});
+	});
+};
+
 renderServices();
 swipeGallery();
+copyText();
