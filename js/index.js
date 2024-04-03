@@ -28,19 +28,11 @@ const renderServices = () => {
 		servicesNode.innerHTML += `
     <!-- card -->
     <div class="card">
-			<div class="inner">
-				<div class="front">
-					<p class="h3">${services[i].name}</p>
-					<p class="unln">Подробнее</p>
-					<img class="bg-img" src="./assets/services/${i + 1}.jpg" alt="preview" />
-				</div>
-				<div class="back">
-					<p>
-						${services[i].description}
-					</p>
-					<a href="#contact" class="btn">Заказать</a>
-				</div>
-			</div>
+			<p class="h3">${services[i].name}</p>
+			<a href="#who" class="unln">Подробнее</a>
+			<img class="bg-img" src="./assets/services/${
+				i + 1
+			}.jpg" alt="preview" loading="lazy" />
 		</div>
     `;
 	}
