@@ -75,6 +75,23 @@ const copyText = () => {
 				});
 		});
 	});
+
+	let emailList = document.querySelectorAll(`#email`);
+	let email = `zorina.olga.73@mail.ru`;
+
+	emailList.forEach(function (emailEl) {
+		emailEl.addEventListener('click', function () {
+			navigator.clipboard
+				.writeText(email)
+				.then(() => {
+					console.log('Скопировано:', email);
+					alert('Скопировано: ' + email);
+				})
+				.catch((err) => {
+					console.error('Failed to copy text: ', err);
+				});
+		});
+	});
 };
 
 renderServices();
