@@ -32,7 +32,7 @@ const renderServices = () => {
 				<div class="front">
 					<p class="h3">${services[i].name}</p>
 					<p class="unln">Подробнее</p>
-					<img class="bg-img" src="/assets/services/${i + 1}.jpg" alt="preview" />
+					<img class="bg-img" src="./assets/services/${i + 1}.jpg" alt="preview" />
 				</div>
 				<div class="back">
 					<p>
