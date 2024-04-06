@@ -367,6 +367,7 @@ main {
 		-webkit-justify-content: center;
 		justify-content: center;
 		padding: 2rem 6rem;
+		margin-bottom: 2rem;
 	}
 
 	.carousel-button {
