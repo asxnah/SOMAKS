@@ -162,7 +162,7 @@ nav {
 	.logo {
 		height: 4rem;
 
-		@media (max-width: 500px) {
+		@media screen and (max-width: 500px) {
 			height: 2rem;
 		}
 	}
@@ -210,7 +210,7 @@ main {
 		display: none;
 	}
 
-	@media (max-width: 680px) {
+	@media screen and (max-width: 680px) {
 		height: 90vh;
 		height: 90lvh;
 
@@ -229,7 +229,7 @@ main {
 		}
 	}
 
-	@media (max-width: 280px) {
+	@media screen and (max-width: 280px) {
 		height: 100vh;
 		height: 100lvh;
 	}
@@ -298,26 +298,26 @@ main {
 		position: relative;
 	}
 
-	@media (max-width: 1170px) {
+	@media screen and (max-width: 1170px) {
 		.cards {
 			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 
-	@media (max-width: 880px) {
+	@media screen and (max-width: 880px) {
 		.cards {
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 
-	@media (max-width: 600px) {
+	@media screen and (max-width: 600px) {
 		.cards,
 		.text {
 			grid-template-columns: 1fr;
 		}
 	}
 
-	@media (max-width: 330px) {
+	@media screen and (max-width: 330px) {
 		.card {
 			height: 20rem;
 		}
@@ -401,7 +401,7 @@ main {
 		right: 1rem;
 	}
 
-	@media (max-width: 500px) {
+	@media screen and (max-width: 500px) {
 		.carousel {
 			height: 36rem;
 		}
@@ -444,7 +444,7 @@ main {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 8rem;
 
-		@media (max-width: 800px) {
+		@media screen and (max-width: 800px) {
 			grid-template-columns: 1fr;
 		}
 	}
@@ -478,7 +478,7 @@ main {
 		border: none;
 	}
 
-	@media (max-width: 800px) {
+	@media screen and (max-width: 800px) {
 		ul {
 			-webkit-flex-wrap: wrap;
 			-ms-flex-wrap: wrap;
@@ -536,7 +536,7 @@ main {
 			cursor: pointer;
 		}
 
-		@media (max-width: 400px) {
+		@media screen and (max-width: 400px) {
 			-webkit-box-align: start;
 			-ms-flex-align: start;
 			-webkit-align-items: flex-start;
@@ -604,18 +604,18 @@ main {
 		background-color: var(--grey);
 	}
 
-	@media (max-width: 800px) {
+	@media screen and (max-width: 800px) {
 		grid-template-columns: 1fr;
 	}
 
-	@media (max-width: 400px) {
+	@media screen and (max-width: 400px) {
 		p.h3,
 		p.h2 {
 			font-size: 14px;
 		}
 	}
 
-	@media (max-width: 300px) {
+	@media screen and (max-width: 300px) {
 		#numbers,
 		#emails {
 			padding: 1rem;
@@ -684,7 +684,7 @@ footer {
 		text-align: right;
 	}
 
-	@media (max-width: 500px) {
+	@media screen and (max-width: 500px) {
 		&,
 		& > div:first-of-type,
 		& > div:last-of-type {
@@ -732,7 +732,7 @@ footer {
 }
 
 /* font sizes */
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
 	p,
 	a {
 		font-size: 14px;
