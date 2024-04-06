@@ -29,7 +29,7 @@ const renderServices = () => {
     <!-- card -->
     <div class="card">
 			<p class="h3">${services[i].name}</p>
-			<a href="#who" class="unln">Подробнее</a>
+			<a href="#who" class="unln">Связаться</a>
 			<img class="bg-img" src="./assets/services/${
 				i + 1
 			}.jpg" alt="preview" loading="lazy" />
