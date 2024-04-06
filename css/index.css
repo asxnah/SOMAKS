@@ -169,11 +169,10 @@ nav {
 }
 
 main {
+	display: grid;
+	display: -ms-grid;
+	gap: 8rem;
 	margin-bottom: 4rem;
-
-	& > * {
-		margin-bottom: 8rem;
-	}
 }
 
 #greet {
@@ -204,6 +203,36 @@ main {
 	background-image: url('../assets/header/1.jpg');
 	background-position: center;
 	background-size: cover;
+
+	position: relative;
+
+	.hid-img * {
+		display: none;
+	}
+
+	@media (max-width: 680px) {
+		height: 90vh;
+		height: 90lvh;
+
+		.hid-img {
+			position: absolute;
+			bottom: 10%;
+		}
+
+		.hid-img * {
+			width: 2rem;
+			height: 2rem;
+
+			display: block;
+			opacity: 0.6;
+			animation: moveUpDown 2s infinite alternate;
+		}
+	}
+
+	@media (max-width: 280px) {
+		height: 100vh;
+		height: 100lvh;
+	}
 }
 
 #services {
