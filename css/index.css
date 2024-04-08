@@ -6,7 +6,7 @@
 	--grey: #dedede;
 	--dgrey: #bcbcbc;
 
-	--blackht: rgba(25, 20, 52, 0.5);
+	--blackht: rgba(25, 20, 52, 0.3);
 }
 
 * {
@@ -88,13 +88,13 @@ h3 {
 }
 
 .bg-img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	z-index: -1 !important;
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover !important;
 }
 
 .copy {
@@ -197,42 +197,30 @@ main {
 #services .cards {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	place-items: center;
+	justify-content: space-between;
 	gap: 2rem;
-}
-
-#services .btn {
-	padding: 1rem;
-	width: fit-content;
-	height: fit-content;
-	color: var(--black);
-	background-color: var(--white);
-	border: none;
-	border-radius: 0.5rem;
-	font-size: inherit;
-	font-family: inherit;
-}
-
-#services .btn:hover {
-	background-color: var(--grey);
-	cursor: pointer;
 }
 
 #services .card {
 	width: 100%;
 	height: 25rem;
 	padding: 1rem;
+
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: column;
 	gap: 1rem;
+
 	color: var(--white);
 	text-shadow: 0 0.2rem 0.2rem var(--blackht);
 	text-align: center;
 	border-radius: 1rem;
+	
 	overflow: hidden;
 	position: relative;
 }
+
+/* carousel */
 
 #how .carousel {
 	width: 100%;
@@ -351,7 +339,7 @@ main {
 	background-image: url('../assets/who/card.png');
 }
 
-#who .card p.h2 {
+#who .card h2 {
 	width: fit-content;
 	text-shadow: 0 0.2rem 0.2rem var(--blackht);
 }
@@ -400,10 +388,12 @@ main {
 #who #numbers,
 #who #emails {
 	padding: 2rem;
-	border-radius: 1rem;
+
 	display: flex;
-	gap: 1rem;
 	flex-direction: column;
+	gap: 1rem;
+
+	border-radius: 1rem;
 }
 
 #who #numbers {
@@ -416,14 +406,18 @@ main {
 }
 
 #who #emails {
+	justify-content: space-between;
 	background-color: var(--grey);
 }
 
 footer {
 	padding: 2rem;
+
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 4rem;
+
 	color: var(--white);
 	background-color: var(--main);
 }

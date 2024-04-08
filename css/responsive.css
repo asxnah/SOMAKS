@@ -1,6 +1,11 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 	.logo {
 		height: 2rem !important;
+	}
+
+	#services .cards,
+	#services .text {
+		grid-template-columns: 1fr;
 	}
 
 	#how .carousel {
@@ -19,9 +24,27 @@
 	#how .h1 {
 		font-size: 1.1rem;
 	}
+
+	#who .somaks {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	#who p.h3,
+	#who p.h2 {
+		font-size: 14px;
+	}
+
+	footer,
+	footer > div:first-of-type,
+	footer > div:last-of-type {
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+	}
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
 	#greet {
 		height: 90vh;
 		height: 90lvh;
@@ -42,84 +65,43 @@
 	}
 }
 
-@media screen and (max-width: 280px) {
-	#greet {
-		height: 100vh;
-		height: 100lvh;
-	}
-}
-
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1180px) {
 	#services .cards {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 900px) {
 	#services .cards {
 		grid-template-columns: repeat(2, 1fr);
 	}
-}
 
-@media screen and (max-width: 600px) {
-	#services .cards,
-	#services .text {
-		grid-template-columns: 1fr;
-	}
-}
-
-@media screen and (max-width: 330px) {
-	#services .card {
-		height: 20rem;
-	}
-}
-
-@media screen and (max-width: 800px) {
 	#other ul {
 		grid-template-columns: 1fr;
 	}
-}
 
-@media screen and (max-width: 800px) {
 	#time ul,
 	#other ul {
 		flex-wrap: wrap;
 	}
-}
 
-@media screen and (max-width: 400px) {
-	#who .somaks {
-		align-items: flex-start;
-		flex-direction: column;
-	}
-}
-
-@media screen and (max-width: 800px) {
 	#who {
 		grid-template-columns: 1fr;
 	}
 }
 
-@media screen and (max-width: 400px) {
-	#who p.h3,
-	#who p.h2 {
-		font-size: 14px;
+@media screen and (max-width: 350px) {
+	#greet {
+		height: 100vh;
+		height: 100lvh;
 	}
-}
 
-@media screen and (max-width: 300px) {
+	#services .card {
+		height: 20rem;
+	}
+
 	#who #numbers,
 	#who #emails {
 		padding: 1rem;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	footer,
-	footer > div:first-of-type,
-	footer > div:last-of-type {
-		align-items: center;
-		flex-direction: column;
-		text-align: center;
 	}
 }
