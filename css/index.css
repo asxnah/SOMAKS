@@ -17,6 +17,12 @@
 	scroll-behavior: smooth;
 }
 
+*:focus-visible {
+	outline: 0.1rem solid crimson;
+	outline-offset: 0.5rem;
+	border-radius: 1rem;
+}
+
 ::-webkit-scrollbar {
 	width: 0.5rem;
 	height: 0.5rem;
@@ -83,8 +89,12 @@ h3 {
 }
 
 .unln {
-	text-decoration: 0.05rem underline;
+	text-decoration-thickness: 1px; /* for older browsers */
+	text-decoration: underline;
+	text-decoration-thickness: 0.05rem;
 	text-underline-offset: 0.1rem;
+	/* ensures the underline color matches the text color */
+	text-decoration-color: currentColor;
 }
 
 .bg-img {
