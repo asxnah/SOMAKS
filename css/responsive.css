@@ -5,6 +5,7 @@
 
 	#time ul,
 	#other ul {
+		gap: 8rem;
 		flex-wrap: wrap;
 	}
 

@@ -318,14 +318,6 @@ main {
 	gap: 1rem;
 }
 
-#time hr,
-#other hr {
-	height: 0.2rem;
-	width: 2rem;
-	background-color: var(--main);
-	border: none;
-}
-
 /* contacts */
 
 #who {
@@ -489,15 +481,18 @@ footer > div:last-of-type {
 		font-size: 1.3rem;
 	}
 
-	.h1 {
+	.h1,
+	h1 {
 		font-size: 1.2rem;
 	}
 
-	.h2 {
+	.h2,
+	h2 {
 		font-size: 1.1rem;
 	}
 
-	.h3 {
+	.h3,
+	h3 {
 		font-size: 1rem;
 	}
 }
