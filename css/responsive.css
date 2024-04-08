@@ -1,0 +1,33 @@
+@media screen and (max-width: 500px) {
+	.logo {
+		height: 2rem !important;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	#greet {
+		height: 90vh;
+		height: 90lvh;
+	}
+
+	#greet .hid-img {
+		position: absolute;
+		bottom: 10%;
+	}
+
+	#greet .hid-img * {
+		width: 2rem;
+		height: 2rem;
+
+		display: block;
+		opacity: 0.6;
+		animation: moveUpDown 2s infinite alternate;
+	}
+}
+
+@media screen and (max-width: 280px) {
+	#greet {
+		height: 100vh;
+		height: 100lvh;
+	}
+}
