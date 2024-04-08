@@ -196,7 +196,7 @@ main {
 
 #services .cards {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
 	justify-content: space-between;
 	gap: 2rem;
 }
@@ -215,7 +215,7 @@ main {
 	text-shadow: 0 0.2rem 0.2rem var(--blackht);
 	text-align: center;
 	border-radius: 1rem;
-	
+
 	overflow: hidden;
 	position: relative;
 }
@@ -277,6 +277,8 @@ main {
 	right: 1rem;
 }
 
+/* basic info */
+
 #time img,
 #other img {
 	width: 2rem;
@@ -323,6 +325,8 @@ main {
 	background-color: var(--main);
 	border: none;
 }
+
+/* contacts */
 
 #who {
 	margin: 0 2rem;
@@ -409,6 +413,8 @@ main {
 	justify-content: space-between;
 	background-color: var(--grey);
 }
+
+/* footer & cr */
 
 footer {
 	padding: 2rem;

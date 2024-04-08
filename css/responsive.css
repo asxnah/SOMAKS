@@ -1,4 +1,40 @@
-@media screen and (max-width: 600px) {
+@media (max-width: 900px) {
+	#other ul {
+		grid-template-columns: 1fr;
+	}
+
+	#time ul,
+	#other ul {
+		flex-wrap: wrap;
+	}
+
+	#who {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 700px) {
+	#greet {
+		height: 90vh;
+		height: 90lvh;
+	}
+
+	#greet .hid-img {
+		position: absolute;
+		bottom: 10%;
+	}
+
+	#greet .hid-img * {
+		width: 2rem;
+		height: 2rem;
+
+		display: block;
+		opacity: 0.6;
+		animation: moveUpDown 2s infinite alternate;
+	}
+}
+
+@media (max-width: 600px) {
 	.logo {
 		height: 2rem !important;
 	}
@@ -44,58 +80,7 @@
 	}
 }
 
-@media screen and (max-width: 700px) {
-	#greet {
-		height: 90vh;
-		height: 90lvh;
-	}
-
-	#greet .hid-img {
-		position: absolute;
-		bottom: 10%;
-	}
-
-	#greet .hid-img * {
-		width: 2rem;
-		height: 2rem;
-
-		display: block;
-		opacity: 0.6;
-		animation: moveUpDown 2s infinite alternate;
-	}
-}
-
-@media screen and (max-width: 1180px) {
-	#services .cards {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-
-@media screen and (max-width: 900px) {
-	#services .cards {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	#other ul {
-		grid-template-columns: 1fr;
-	}
-
-	#time ul,
-	#other ul {
-		flex-wrap: wrap;
-	}
-
-	#who {
-		grid-template-columns: 1fr;
-	}
-}
-
-@media screen and (max-width: 350px) {
-	#greet {
-		height: 100vh;
-		height: 100lvh;
-	}
-
+@media (max-width: 350px) {
 	#services .card {
 		height: 20rem;
 	}
