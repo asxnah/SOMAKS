@@ -3,14 +3,13 @@
 		grid-template-columns: 1fr;
 	}
 
-	#time ul,
-	#other ul {
-		gap: 8rem;
+	#time ul {
 		flex-wrap: wrap;
 	}
 
-	#who {
-		grid-template-columns: 1fr;
+	#time ul,
+	#other ul {
+		gap: 8rem;
 	}
 }
 
@@ -62,6 +61,11 @@
 		font-size: 1.1rem;
 	}
 
+	#contact-form,
+	#contact-form .group {
+		gap: 1rem;
+	}
+
 	#who .somaks {
 		align-items: flex-start;
 		flex-direction: column;
@@ -81,13 +85,18 @@
 	}
 }
 
-@media (max-width: 350px) {
+@media (max-width: 365px) {
 	#services .card {
 		height: 20rem;
 	}
 
+	main > section:not(#greet) {
+		margin: 0 1rem !important;
+		padding: 0 !important;
+	}
+
 	#who #numbers,
 	#who #emails {
-		padding: 1rem;
+		padding: 2rem 1rem;
 	}
 }

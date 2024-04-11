@@ -9,6 +9,12 @@
 			name="keywords"
 			content="грузоперевозки, перевозки, грузов, россии, экспедирование, крупногабаритные, еврофурами, сомакс"
 		/>
+		<meta
+			name="description"
+			content="Мы - ООО 'Грузовые перевозки 'СОМАКС' Доставка грузов различной сложности, включая негабаритные и
+					тяжеловесные, по всей территории России. Экспедирование, Перевозки открытым транспортом, Крупногабаритные перевозки, Перевозки еврофурами."
+		/>
+		<meta name="robots" content="noindex,nofollow" />
 		<!-- ios -->
 		<meta name="theme-color" content="#3192c9" />
 		<!-- tab img -->
@@ -45,12 +51,13 @@
 						<a href="#time">о компании</a>
 						<a href="#contact">контакты</a>
 						<p>
-							<span class="copy" title="Нажмите, чтобы скопировать"
-								>+7 912-591-05-44</span
-							><br />
-							<span class="copy" title="Нажмите, чтобы скопировать"
-								>+7 967-903-95-97</span
-							>
+							<span class="copy" title="Нажмите, чтобы скопировать">
+								+7 912-591-05-44
+							</span>
+							<br />
+							<span class="copy" title="Нажмите, чтобы скопировать">
+								+7 967-903-95-97
+							</span>
 						</p>
 					</nav>
 				</header>
@@ -80,6 +87,43 @@
 				<div class="cards">
 					<!-- reactive -->
 				</div>
+			</section>
+
+			<section class="contact-us">
+				<h1>Оставьте заявку</h1>
+				<p>
+					Заполните все поля, отправьте заявку и мы свяжемся с Вами в течение
+					двух дней.
+				</p>
+				<form action="send-email.php" method="post">
+					<label for="name"></label>
+					<input
+						id="name"
+						type="text"
+						placeholder="Как к Вам обращаться"
+						autocomplete="name"
+						required
+					/>
+					<label for="inn"></label>
+					<input id="inn" type="number" placeholder="ИНН" required />
+					<label for="num"></label>
+					<input
+						id="num"
+						type="number"
+						placeholder="Ваш номер телефона"
+						autocomplete="tel"
+						required
+					/>
+					<label for="email"></label>
+					<input
+						id="email"
+						type="email"
+						placeholder="Ваша электронная почта"
+						autocomplete="email"
+						required
+					/>
+					<button type="submit" class="bold">Отправить</button>
+				</form>
 			</section>
 
 			<section id="how">
@@ -266,6 +310,7 @@
 							<div class="links">
 								<a
 									href="https://api.whatsapp.com/send?phone=79679039597&text=Здравствуйте,%20Ольга!"
+									target="_blank"
 								>
 									<img
 										src="./assets/icons/whatsapp.png"
@@ -284,7 +329,7 @@
 						<h2>Свяжитесь с нами</h2>
 					</div>
 					<a
-						href="https://mail.ru/compose/?subject=Сотрудничество с СОМАКС&body=Здравствуйте,%20Ольга!&to=zorina.olga.73@mail.ru"
+						href="https://e.mail.ru/compose/?subject=Сотрудничество с СОМАКС&body=Здравствуйте,%20Ольга!&to=zorina.olga.73@mail.ru"
 						target="_blank"
 						class="btn"
 					>
@@ -298,7 +343,9 @@
 							<span class="copy" title="Нажмите, чтобы скопировать">
 								+7 912-591-05-44
 							</span>
-							(Николай) <br />
+							(Николай)
+						</p>
+						<p class="h3 bold">
 							<span class="copy" title="Нажмите, чтобы скопировать">
 								+7 967-903-95-97
 							</span>
@@ -307,7 +354,10 @@
 					</div>
 					<div id="emails">
 						<p>Электронная почта</p>
-						<p class="h3 bold copy">zorina.olga.73@mail.ru (Ольга)</p>
+						<p class="h3 bold">
+							<span class="copy">zorina.olga.73@mail.ru</span>
+							(Ольга)
+						</p>
 					</div>
 				</section>
 			</section>
@@ -316,7 +366,7 @@
 		<footer>
 			<!-- info -->
 			<div>
-				<img src="./assets/logo.png" alt="logo" />
+				<img class="logo" src="./assets/logo.png" alt="logo" />
 				<div>
 					<span>ООО “ГП “СОМАКС”</span>
 					<br />
@@ -361,8 +411,13 @@
 		</footer>
 
 		<div class="cr">
-			<p>Icons by <a href="https://icons8.com" class="link">icons8</a></p>
-			<a href="https://github.com/sohee-commits">Developed by Sohee</a>
+			<p>
+				Icons by
+				<a href="https://icons8.com" class="link" target="_blank">icons8</a>
+			</p>
+			<a href="https://github.com/sohee-commits" target="_blank">
+				Developed by Sohee
+			</a>
 		</div>
 	</body>
 </html>
