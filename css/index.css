@@ -75,7 +75,6 @@ a.btn:active {
 
 body {
 	background-color: var(--white);
-	user-select: none;
 }
 
 body > section:first-child {
@@ -119,6 +118,7 @@ body > section:first-child .start-contact img {
 
 	position: relative;
 	overflow: hidden;
+	user-select: none;
 }
 
 .summary-bg-video,
@@ -246,6 +246,7 @@ header button {
 	gap: 1rem;
 
 	font-weight: 400;
+	user-select: none;
 }
 
 .company .more img {
@@ -281,6 +282,7 @@ header button {
 	gap: 3rem;
 
 	border-radius: 1rem;
+	user-select: none;
 }
 
 .why-us .reason p:first-child {
