@@ -1,102 +1,140 @@
-@media (max-width: 900px) {
-	#other ul {
-		grid-template-columns: 1fr;
+@media (max-width: 1020px) {
+	#pc-header {
+		display: none;
 	}
 
-	#time ul {
-		flex-wrap: wrap;
+	#mobile-header {
+		display: flex;
+		align-items: center;
+		position: relative;
 	}
 
-	#time ul,
-	#other ul {
-		gap: 8rem;
+	#mobile-header nav {
+		padding: 2rem;
+		width: 100%;
+		height: 100vh;
+
+		position: absolute;
+		top: 0;
+		right: -200%;
+		z-index: 1;
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 2rem;
+
+		background-color: var(--white);
+	}
+
+	#mobile-header nav.show {
+		right: 0;
+	}
+
+	#mobile-header nav ul {
+		align-items: center;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	#mobile-header > button {
+		padding: 0 !important;
+
+		font-size: 1.25rem;
+	}
+
+	#close-nav {
+		padding: 0;
 	}
 }
 
-@media (max-width: 700px) {
-	#greet {
+@media (max-width: 880px) {
+	body > section:first-child .number {
+		display: none;
+	}
+
+	.process img:first-of-type {
+		display: none;
+	}
+
+	.process img:last-of-type {
+		display: block;
+	}
+}
+
+@media (max-width: 730px) {
+	.summary {
 		height: 90vh;
 		height: 90lvh;
-	}
-
-	#greet .hid-img {
-		position: absolute;
-		bottom: 10%;
-	}
-
-	#greet .hid-img * {
-		width: 2rem;
-		height: 2rem;
-
-		display: block;
-		opacity: 0.6;
-		animation: moveUpDown 2s infinite alternate;
 	}
 }
 
 @media (max-width: 600px) {
-	.logo {
-		height: 2rem !important;
+	p,
+	a {
+		font-size: 0.8rem;
 	}
 
-	#services .cards,
-	#services .text {
-		grid-template-columns: 1fr;
+	h1 {
+		font-size: 2rem;
 	}
 
-	#how .carousel {
-		height: 36rem;
+	h2 {
+		font-size: 1.5rem;
 	}
 
-	#how .carousel-button {
-		height: min-content;
-		top: 32rem;
+	h3 {
+		font-size: 1.25rem;
 	}
 
-	#how .slide .inner {
+	header {
 		padding: 1rem 2rem;
 	}
 
-	#how .h1 {
-		font-size: 1.1rem;
+	.summary .text-margin {
+		margin: 0 2rem;
 	}
 
-	#contact-form,
-	#contact-form .group {
-		gap: 1rem;
+	.company,
+	.why-us,
+	.services,
+	.process,
+	.contact,
+	footer {
+		padding: 2rem;
 	}
 
-	#who .somaks {
-		align-items: flex-start;
-		flex-direction: column;
+	.company .legal li p:first-child {
+		font-size: 1.25rem;
 	}
 
-	#who p.h3,
-	#who p.h2 {
-		font-size: 14px;
+	.company .btn {
+		border-radius: 1rem;
 	}
 
-	footer,
-	footer > div:first-of-type,
-	footer > div:last-of-type {
-		align-items: center;
-		flex-direction: column;
-		text-align: center;
+	.contact ul * {
+		font-weight: 700;
+	}
+
+	.info * {
+		font-size: 0.6rem;
+	}
+
+	.info img {
+		width: 0.6rem;
+		height: 0.6rem;
 	}
 }
 
-@media (max-width: 365px) {
-	#services .card {
-		height: 20rem;
+@media (max-width: 500px) {
+	body > section:first-child > section:first-child {
+		display: none;
 	}
+}
 
-	main > section:not(#greet) {
-		margin: 0 1rem !important;
-		padding: 0 !important;
-	}
-
-	#who #numbers,
-	#who #emails {
-		padding: 2rem 1rem;
+@media (max-width: 300px) {
+	body > section:first-child,
+	header {
+		padding: 1rem;
 	}
 }

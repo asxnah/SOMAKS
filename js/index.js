@@ -1,99 +1,79 @@
-const renderServices = () => {
-	let servicesNode = document.querySelector(`#services > .cards`);
+// отображение фото вместо видео, если видео не прогрузилось за 15 сек
+document.addEventListener('DOMContentLoaded', () => {
+	let summaryVideo = document.querySelector(`.summary-bg-video`);
+	let fallbackImage = document.querySelector(`.fallback-image`);
+	let timeout = 15000; // 15 секунд
 
-	let services = [
-		{
-			name: 'Экспедирование',
-			description:
-				'Экспедирование в крупногабаритных перевозках относится к процессу организации и сопровождения перевозки грузов, которые по размеру, весу или форме не подходят для стандартных методов транспортировки, таких как автомобильные перевозки. Крупногабаритные грузы могут включать в себя тяжёлые машины, оборудование, крупные строительные материалы, а также очень крупные и тяжёлые контейнеры.',
-		},
-		{
-			name: 'Перевозки открытым транспортом',
-			description:
-				'Перевозки открытым транспортом в крупногабаритных перевозках относятся к типу грузоперевозок, где груз не упакован и не защищен от воздействия окружающей среды, и его размеры превышают стандартные габариты, что делает его не подходящим для перевозки в контейнерах или других защищенных упаковках. Такие грузы могут включать в себя мебель, оборудование, строительные материалы и другие товары.',
-		},
-		{
-			name: 'Крупногабаритные перевозки',
-			description:
-				'Крупногабаритные перевозки — это процесс перемещения грузов, которые из-за своих больших размеров или веса требуют особого подхода и специального оборудования. Эти грузы могут включать в себя технические устройства, строительные конструкции, транспортные средства и другие объекты. Перевозка таких грузов является сложной и ответственной задачей, требующей тщательного планирования.',
-		},
-		{
-			name: 'Перевозки еврофурами',
-			description:
-				'Еврофура состоит из грузовика и полуприцепа, что позволяет перевозить больше груза по сравнению с фурой. Они обладают повышенной грузоподъемностью и могут оснащаться специальными системами, такими как хладильники или системы контроля температуры, что делает их идеальным выбором для перевозки грузов с определенными требованиями к условиям хранения и транспортировки.',
-		},
-	];
+	summaryVideo.addEventListener('loadeddata', () => {
+		fallbackImage.style.display = 'none';
+	});
 
-	for (i = 0; i <= services.length - 1; i++) {
-		servicesNode.innerHTML += `
-    <!-- card -->
-    <div class="card">
-			<p class="h3">${services[i].name}</p>
-			<a href="#who" class="unln">Связаться</a>
-			<img class="bg-img" src="./assets/services/${
-				i + 1
-			}.jpg" alt="preview" loading="lazy" />
-		</div>
-    `;
-	}
-};
+	summaryVideo.addEventListener('error', () => {
+		fallbackImage.style.display = 'block';
+	});
 
-const swipeGallery = () => {
-	const buttons = document.querySelectorAll('[data-carousel-button]');
+	setTimeout(function () {
+		if (summaryVideo.readyState === 0) {
+			fallbackImage.style.display = 'block';
+		}
+	}, timeout);
+});
 
-	buttons.forEach((button) => {
-		button.addEventListener('click', () => {
-			const offset = button.dataset.carouselButton === 'next' ? 1 : -1;
-			const slides = button
-				.closest('[data-carousel]')
-				.querySelector('[data-slides]');
+let controlNav = () => {
+	let nav = document.querySelector(`#mobile-nav`);
+	let openBtn = document.querySelector(`#open-nav`);
+	let closeBtn = document.querySelector(`#close-nav`);
 
-			const activeSlide = slides.querySelector('[data-active]');
-			let newIndex = [...slides.children].indexOf(activeSlide) + offset;
-			if (newIndex < 0) newIndex = slides.children.length - 1;
-			if (newIndex >= slides.children.length) newIndex = 0;
+	openBtn.addEventListener(`click`, () => {
+		nav.classList.add(`show`);
+	});
 
-			slides.children[newIndex].dataset.active = true;
-			delete activeSlide.dataset.active;
-		});
+	closeBtn.addEventListener(`click`, () => {
+		nav.classList.remove(`show`);
 	});
 };
 
-const copyText = () => {
-	let copyList = document.querySelectorAll('.copy');
+let copyElements = () => {
+	let email = document.querySelector(`#email-to-copy`);
+	let number_1 = document.querySelector(`#number-to-copy-1`);
+	let number_2 = document.querySelector(`#number-to-copy-2`);
 
-	copyList.forEach(function (copyEl) {
-		copyEl.addEventListener('click', function () {
-			navigator.clipboard
-				.writeText(this.innerText)
-				.then(() => {
-					console.log('Скопировано:', this.innerText);
-					alert('Скопировано: ' + this.innerText);
-				})
-				.catch((err) => {
-					console.error('Failed to copy text: ', err);
-				});
-		});
+	email.addEventListener(`click`, () => {
+		navigator.clipboard
+			.writeText(`zorina.olga.73@mail.ru`)
+			.then(() => {
+				console.log('Скопировано:', `zorina.olga.73@mail.ru`);
+				alert('Скопировано: ' + `zorina.olga.73@mail.ru`);
+			})
+			.catch((err) => {
+				console.error('Failed to copy text: ', err);
+			});
 	});
 
-	let emailList = document.querySelectorAll(`#email`);
-	let email = `zorina.olga.73@mail.ru`;
+	number_1.addEventListener(`click`, () => {
+		navigator.clipboard
+			.writeText(`+7 912-591-05-44`)
+			.then(() => {
+				console.log('Скопировано:', `+7 912-591-05-44`);
+				alert('Скопировано: ' + `+7 912-591-05-44`);
+			})
+			.catch((err) => {
+				console.error('Failed to copy text: ', err);
+			});
+	});
 
-	emailList.forEach(function (emailEl) {
-		emailEl.addEventListener('click', function () {
-			navigator.clipboard
-				.writeText(email)
-				.then(() => {
-					console.log('Скопировано:', email);
-					alert('Скопировано: ' + email);
-				})
-				.catch((err) => {
-					console.error('Failed to copy text: ', err);
-				});
-		});
+	number_2.addEventListener(`click`, () => {
+		navigator.clipboard
+			.writeText(`+7 967-903-95-97`)
+			.then(() => {
+				console.log('Скопировано:', `+7 967-903-95-97`);
+				alert('Скопировано: ' + `+7 967-903-95-97`);
+			})
+			.catch((err) => {
+				console.error('Failed to copy text: ', err);
+			});
 	});
 };
 
-renderServices();
-swipeGallery();
-copyText();
+controlNav();
+copyElements();
