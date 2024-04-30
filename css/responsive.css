@@ -64,8 +64,13 @@
 
 @media (max-width: 730px) {
 	.summary {
-		height: 90vh;
-		height: 90lvh;
+		padding-bottom: 2rem;
+		height: fit-content;
+	}
+
+	.summary-bg-video,
+	.fallback-image {
+		object-position: left top;
 	}
 }
 
