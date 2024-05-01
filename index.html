@@ -26,7 +26,16 @@
 		<script src="./js/index.js" defer></script>
 	</head>
 	<body>
-		<section aria-label="наши контакты: почта, номер и город офиса">
+		<section class="contacts" aria-label="наши контакты">
+			<section itemscope itemtype="http://schema.org/Organization">
+				<div class="start-contact">
+					<img
+						src="./assets/icons/office-building.png"
+						alt="черно-белая иконка здания &#127970;"
+					/>
+					<p itemprop="address">Россия, г. Пермь</p>
+				</div>
+			</section>
 			<section itemscope itemtype="http://schema.org/Organization">
 				<div class="start-contact">
 					<img
@@ -50,25 +59,18 @@
 					<p itemprop="telephone">+7 967-903-95-97</p>
 				</div>
 			</section>
-			<section itemscope itemtype="http://schema.org/Organization">
-				<div class="start-contact">
-					<img
-						src="./assets/icons/office-building.png"
-						alt="черно-белая иконка здания &#127970;"
-					/>
-					<p itemprop="address">Россия, г. Пермь</p>
-				</div>
-			</section>
 		</section>
 
 		<main>
-			<section class="summary" id="summary">
+			<section class="summary" id="summary" style="display: none">
 				<!-- pc header -->
 				<header id="pc-header">
-					<img
-						src="./assets/logo/logo.svg"
-						alt="черно-белый логотип нашей компании SO | MAKS"
-					/>
+					<a href="#">
+						<img
+							src="./assets/logo/logo.svg"
+							alt="черно-белый логотип нашей компании SO | MAKS"
+						/>
+					</a>
 					<nav>
 						<ul>
 							<li><a href="#company">О компании</a></li>
@@ -81,10 +83,12 @@
 
 				<!-- mobile header -->
 				<header id="mobile-header">
-					<img
-						src="./assets/logo/logo.svg"
-						alt="черно-белый логотип нашей компании SO | MAKS"
-					/>
+					<a href="#">
+						<img
+							src="./assets/logo/logo.svg"
+							alt="черно-белый логотип нашей компании SO | MAKS"
+						/>
+					</a>
 					<button id="open-nav">☰</button>
 					<!-- nav -->
 					<nav id="mobile-nav">
@@ -110,8 +114,7 @@
 					</div>
 					<a href="#company">Узнать больше</a>
 				</div>
-				<!-- белый градиентный фон для читабельности -->
-				<img src="" alt="" />
+
 				<!-- видеофон -->
 				<video autoplay muted loop class="summary-bg-video">
 					<source
@@ -126,7 +129,7 @@
 				/>
 			</section>
 
-			<section class="company" id="company">
+			<section class="company" id="company" style="display: none">
 				<div class="intro">
 					<h2>О нашей компании</h2>
 					<p>
@@ -186,7 +189,7 @@
 				</div>
 			</section>
 
-			<section class="why-us" id="why-us">
+			<section class="why-us" id="why-us" style="display: none">
 				<div class="intro">
 					<h2>Почему нас выбирают</h2>
 					<p>
@@ -233,7 +236,7 @@
 				</section>
 			</section>
 
-			<section class="services" id="services">
+			<section class="services" id="services" style="display: none">
 				<div class="intro">
 					<h2>Предоставляемые услуги</h2>
 					<p>
@@ -297,7 +300,7 @@
 				</ul>
 			</section>
 
-			<section class="process" id="process">
+			<section class="process" id="process" style="display: none">
 				<div class="intro">
 					<h2>Как мы перевозим груз</h2>
 					<p>
@@ -328,12 +331,12 @@
 				/>
 			</section>
 
-			<section class="contact" id="contact">
+			<section class="contact" style="display: none">
 				<div class="intro">
 					<p>Написать или позвонить</p>
 					<h2>Свяжитесь с нами</h2>
 				</div>
-				<ul itemscope itemtype="http://schema.org/Organization">
+				<ul id="contact" itemscope itemtype="http://schema.org/Organization">
 					<li>
 						<div class="el" id="email-to-copy">
 							<img
@@ -396,7 +399,7 @@
 			</section>
 		</main>
 
-		<footer>
+		<footer style="display: none">
 			<a href="#" class="logo">
 				<img
 					loading="lazy"
@@ -446,6 +449,7 @@
 		</footer>
 
 		<section
+			style="display: none"
 			class="info"
 			aria-label="список прав на веб-сайт: компания, разработчик и откуда иконки"
 		>

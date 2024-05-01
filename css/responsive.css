@@ -100,11 +100,7 @@
 		margin: 0 2rem;
 	}
 
-	.company,
-	.why-us,
-	.services,
-	.process,
-	.contact,
+	main > section:not(.summary),
 	footer {
 		padding: 2rem;
 	}
@@ -132,6 +128,7 @@
 }
 
 @media (max-width: 500px) {
+	/* почта и номера */
 	body > section:first-child > section:first-child {
 		display: none;
 	}

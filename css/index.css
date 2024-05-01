@@ -57,22 +57,6 @@ h3 {
 	border: 0.063rem solid var(--black);
 }
 
-button.btn:hover,
-a.btn:hover {
-	background-color: var(--black);
-	color: var(--white);
-	font-weight: initial;
-}
-
-button.btn:active,
-a.btn:active {
-	font-weight: 600;
-	background: none;
-	color: var(--black);
-
-	outline: 0.2rem solid #798182;
-}
-
 body {
 	background-color: var(--white);
 }
@@ -85,7 +69,8 @@ body > section:first-child {
 	align-items: center;
 }
 
-body > section:first-child > section:first-child {
+/* почта и номера */
+body > section:first-child > section:last-child {
 	display: flex;
 	align-items: center;
 	gap: 2rem;
@@ -100,6 +85,18 @@ body > section:first-child .start-contact {
 body > section:first-child .start-contact img {
 	width: 1rem;
 	height: 1rem;
+}
+
+main > section:not(.summary) {
+	padding: 8rem;
+
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+main > section:not(.summary) .intro h2 {
+	margin-bottom: 1.25rem;
 }
 
 .summary {
@@ -185,31 +182,8 @@ header button {
 	box-shadow: 0.25rem 0.25rem 1rem rgba(1, 11, 19, 0.25);
 }
 
-.summary .text-margin a:hover {
-	font-size: 1.1rem;
-}
-
-.company,
-.why-us,
-.services,
-.process,
-.contact {
-	padding: 8rem;
-
-	display: flex;
-	flex-direction: column;
-	gap: 4rem;
-}
-
 .company {
 	background-color: var(--main-color);
-}
-
-.company .intro h2,
-.why-us .intro h2,
-.services .intro h2,
-.process .intro h2 {
-	margin-bottom: 1.25rem;
 }
 
 .company .legal ul {
@@ -405,10 +379,6 @@ header button {
 	color: var(--white);
 }
 
-.contact ul .text-by-mailru:hover {
-	outline: 0.2rem solid #798182;
-}
-
 .contact ul .el {
 	padding: 0 0 1rem 0;
 
@@ -422,12 +392,6 @@ header button {
 .contact img {
 	width: 1.25rem;
 	height: 1.25rem;
-}
-
-.contact img:hover {
-	width: 1.5rem;
-	height: 1.5rem;
-	cursor: pointer;
 }
 
 #email-to-copy {
@@ -493,4 +457,36 @@ footer * {
 .info img {
 	width: 1rem;
 	height: 1rem;
+}
+
+/* interactions with elements */
+
+button.btn:hover,
+a.btn:hover {
+	background-color: var(--black);
+	color: var(--white);
+	font-weight: initial;
+}
+
+.summary .text-margin a:hover {
+	font-size: 1.1rem;
+}
+
+.contact img:hover {
+	width: 1.5rem;
+	height: 1.5rem;
+	cursor: pointer;
+}
+
+.contact ul .text-by-mailru:hover {
+	outline: 0.2rem solid #798182;
+}
+
+button.btn:active,
+a.btn:active {
+	font-weight: 600;
+	background: none;
+	color: var(--black);
+
+	outline: 0.2rem solid #798182;
 }
