@@ -14,8 +14,9 @@
 		/>
 		<meta
 			name="keywords"
-			content="сомакс, somaks, ооо гп сомакс, крупногабаритные грузоперевозки, негабарит, перевозки еврофурами, экспедирование, перевозки груза по россии"
+			content="перевозки сомакс, сомакс, somaks, so-maks, ооо гп сомакс, крупногабаритные грузоперевозки, негабарит, перевозки еврофурами, экспедирование, перевозки груза по россии"
 		/>
+		<meta name="theme-color" content="#f3f7f3" />
 		<link
 			rel="shortcut icon"
 			href="./assets/logo/logo-short.svg"
@@ -26,110 +27,179 @@
 		<script src="./js/index.js" defer></script>
 	</head>
 	<body>
-		<section class="contacts" aria-label="наши контакты">
-			<section itemscope itemtype="http://schema.org/Organization">
-				<div class="start-contact">
-					<img
-						src="./assets/icons/office-building.png"
-						alt="черно-белая иконка здания &#127970;"
-					/>
-					<p itemprop="address">Россия, г. Пермь</p>
-				</div>
-			</section>
-			<section itemscope itemtype="http://schema.org/Organization">
-				<div class="start-contact">
-					<img
-						src="./assets/icons/email.png"
-						alt="черно-белая иконка закрытого письма &#x2709;"
-					/>
-					<p itemprop="email">zorina.olga.73@mail.ru</p>
-				</div>
-				<div class="start-contact number">
-					<img
-						src="./assets/icons/phone.png"
-						alt="черно-белая иконка телефона &#128222;"
-					/>
-					<p itemprop="telephone">+7 912-591-05-44</p>
-				</div>
-				<div class="start-contact number">
-					<img
-						src="./assets/icons/phone.png"
-						alt="черно-белая иконка телефона &#128222;"
-					/>
-					<p itemprop="telephone">+7 967-903-95-97</p>
-				</div>
-			</section>
+		<section
+			class="header-location"
+			itemscope
+			itemtype="http://schema.org/Organization"
+		>
+			<img
+				src="./assets/icons/office-building.png"
+				alt="черно-белая иконка офисного здания"
+			/>
+			<p itemprop="address">Россия, г. Пермь</p>
 		</section>
 
+		<header class="desktop-header">
+			<img src="./assets/logo/logo-white.svg" alt="SO | MAKS - логотип" />
+			<nav>
+				<ul>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#why-us">Почему мы</a></li>
+					<li><a href="#process">Процесс перевозки грузов</a></li>
+					<li><a href="#our-trucks">Наш транспорт</a></li>
+				</ul>
+			</nav>
+			<a href="#about">О компании</a>
+		</header>
+
+		<header class="m-header">
+			<img src="./assets/logo/logo-white.svg" alt="SO | MAKS - логотип" />
+			<button id="open-nav">☰</button>
+			<nav>
+				<button id="close-nav">X</button>
+				<ul>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#why-us">Почему мы</a></li>
+					<li><a href="#process">Процесс перевозки грузов</a></li>
+					<li><a href="#our-trucks">Наш транспорт</a></li>
+					<a href="#about">О компании</a>
+				</ul>
+			</nav>
+		</header>
+
 		<main>
-			<section class="summary" id="summary" style="display: none">
-				<!-- pc header -->
-				<header id="pc-header">
-					<a href="#">
-						<img
-							src="./assets/logo/logo.svg"
-							alt="черно-белый логотип нашей компании SO | MAKS"
-						/>
-					</a>
-					<nav>
-						<ul>
-							<li><a href="#company">О компании</a></li>
-							<li><a href="#services">Услуги</a></li>
-							<li><a href="#process">Процесс перевозки грузов</a></li>
-						</ul>
-					</nav>
-					<a href="#contact" class="btn">Связаться</a>
-				</header>
-
-				<!-- mobile header -->
-				<header id="mobile-header">
-					<a href="#">
-						<img
-							src="./assets/logo/logo.svg"
-							alt="черно-белый логотип нашей компании SO | MAKS"
-						/>
-					</a>
-					<button id="open-nav">☰</button>
-					<!-- nav -->
-					<nav id="mobile-nav">
-						<button id="close-nav">✖</button>
-						<ul>
-							<li><a href="#company">О компании</a></li>
-							<li><a href="#services">Услуги</a></li>
-							<li><a href="#process">Процесс перевозки грузов</a></li>
-						</ul>
-						<a href="#contact" class="btn">Связаться</a>
-					</nav>
-				</header>
-
-				<div class="text-margin">
-					<div class="heading">
-						<h1 aria-labelledby="основная деятельность нашей компании">
-							Грузовые перевозки автомобильным транспортом
-						</h1>
-						<p>
-							Доставка грузов различной сложности, включая негабаритные и
-							тяжеловесные, по всей территории России.
-						</p>
-					</div>
-					<a href="#company">Узнать больше</a>
+			<section class="summary" id="summary">
+				<div class="text">
+					<h1>Грузовые перевозки автомобильным транспортом</h1>
+					<p>
+						Доставка грузов различной сложности, включая негабаритные и
+						тяжеловесные, по всей территории России.
+						<span class="bold">Мы − ООО “Грузовые перевозки “СОМАКС”.</span>
+					</p>
 				</div>
-
-				<!-- видеофон -->
-				<video autoplay muted loop class="summary-bg-video">
-					<source
-						src="./assets/summary-bg/Pines_Valley_1280x720.mp4"
-						type="video/mp4"
-					/>
-				</video>
-				<img
-					src="./assets/summary-bg/Pines_Valley_1280x720.webp"
-					alt="дорога посреди леса"
-					class="fallback-image"
-				/>
+				<div class="get-in-touch">
+					<ul itemscope itemtype="http://schema.org/Organization">
+						<li
+							class="copy"
+							data-copy="zorina.olga.73@mail.ru"
+							title="Нажмите, чтобы скопировать email"
+						>
+							<img
+								loading="lazy"
+								src="./assets/icons/copy.png"
+								alt="черная иконка копирования"
+								itemprop="email"
+							/>
+							zorina.olga.73@mail.ru
+						</li>
+						<li
+							class="copy"
+							data-copy="+7 912-591-05-44"
+							title="Нажмите, чтобы скопировать номер"
+						>
+							<img
+								loading="lazy"
+								src="./assets/icons/copy.png"
+								alt="черная иконка копирования"
+							/>
+							<a href="tel:+7 912-591-05-44" itemprop="telephone">
+								+7 912-591-05-44
+							</a>
+						</li>
+						<li
+							class="copy"
+							data-copy="+7 967-903-95-97"
+							title="Нажмите, чтобы скопировать номер"
+						>
+							<img
+								loading="lazy"
+								src="./assets/icons/copy.png"
+								alt="черная иконка копирования"
+							/>
+							<a href="tel:+7 967-903-95-97" itemprop="telephone">
+								+7 967-903-95-97
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://e.mail.ru/compose/?subject=Сотрудничество с СОМАКС&body=Здравствуйте,%20Ольга!&to=zorina.olga.73@mail.ru"
+								target="_blank"
+								class="btn-filled"
+							>
+								Написать на mail.ru
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://api.whatsapp.com/send?phone=79679039597&text=Здравствуйте,%20Ольга!"
+								target="_blank"
+								class="btn-outlined"
+							>
+								Написать в WhatsApp
+							</a>
+						</li>
+					</ul>
+				</div>
 			</section>
 
-			<section class="company" id="company" style="display: none">
+			<section class="services" id="services">
+				<div class="intro">
+					<h2>Предоставляемые услуги</h2>
+					<p>
+						При перевозке крупногабаритных грузов помимо разрешения
+						предусмотрено сопровождение транспорта.
+					</p>
+				</div>
+				<section class="cards">
+					<a href="#get-in-touch" class="card">
+						<p class="btn-outlined">Экспедирование</p>
+						<div class="img">
+							<img
+								loading="lazy"
+								src="./assets/trucks/forwarding.webp"
+								alt="превью"
+							/>
+						</div>
+						<img
+							loading="lazy"
+							src="./assets/icons/arrow-down.svg"
+							alt="двойная стрелка вниз"
+						/>
+					</a>
+					<a href="#get-in-touch" class="card">
+						<p class="btn-outlined">Негабаритные перевозки</p>
+						<div class="img">
+							<img
+								loading="lazy"
+								src="./assets/trucks/oversize-transportation.webp"
+								alt="превью"
+							/>
+						</div>
+						<img
+							loading="lazy"
+							src="./assets/icons/arrow-down.svg"
+							alt="двойная стрелка вниз"
+						/>
+					</a>
+					<a href="#get-in-touch" class="card">
+						<p class="btn-outlined">Перевозки еврофурами</p>
+						<div class="img">
+							<img
+								loading="lazy"
+								src="./assets/trucks/eurofreight-truck.webp"
+								alt="превью"
+							/>
+						</div>
+						<img
+							loading="lazy"
+							src="./assets/icons/arrow-down.svg"
+							alt="двойная стрелка вниз"
+						/>
+					</a>
+				</section>
+			</section>
+
+			<section class="about" id="about">
 				<div class="intro">
 					<h2>О нашей компании</h2>
 					<p>
@@ -139,57 +209,27 @@
 						маршрутах.
 					</p>
 				</div>
-				<div class="legal" aria-label="юридическая информация о нашей компании">
-					<ul>
-						<li>
-							<p>5904306390</p>
-							<p>ИНН</p>
-						</li>
-						<li>
-							<p>1155958045671</p>
-							<p>ОГРН</p>
-						</li>
-						<li>
-							<p>590401001</p>
-							<p>КПП</p>
-						</li>
-						<li>
-							<p>12034274</p>
-							<p>ОКПО</p>
-						</li>
-					</ul>
-				</div>
-				<div class="more" aria-label="наши преимущества">
-					<ul>
-						<li class="btn">
-							<img
-								loading="lazy"
-								src="./assets/icons/check.svg"
-								alt="круглая иконка черно-белой галочки &#10003;"
-							/>
-							<p>Зарегистрированы в ФНС с 2015 года</p>
-						</li>
-						<li class="btn">
-							<img
-								loading="lazy"
-								src="./assets/icons/check.svg"
-								alt="круглая иконка черно-белой галочки &#10003;"
-							/>
-							<p>Существуем и успешно развиваемся уже 9 лет</p>
-						</li>
-						<li class="btn">
-							<img
-								loading="lazy"
-								src="./assets/icons/check.svg"
-								alt="круглая иконка черно-белой галочки &#10003;"
-							/>
-							<p>Полное наименование нашей компании ООО “ГП “СОМАКС”</p>
-						</li>
-					</ul>
-				</div>
+				<ul>
+					<li>
+						<img
+							loading="lazy"
+							src="./assets/icons/calendar.png"
+							alt="черная иконка календаря"
+						/>
+						Зарегистрированы в ФНС с 2015 года
+					</li>
+					<li>
+						<img
+							loading="lazy"
+							src="./assets/icons/sandclock.png"
+							alt="черная иконка песочных часов"
+						/>
+						Существуем и успешно развиваемся уже 9 лет
+					</li>
+				</ul>
 			</section>
 
-			<section class="why-us" id="why-us" style="display: none">
+			<section class="why-us" id="why-us">
 				<div class="intro">
 					<h2>Почему нас выбирают</h2>
 					<p>
@@ -200,107 +240,43 @@
 					</p>
 				</div>
 				<section class="reasons">
-					<section class="reason">
+					<div class="reason">
 						<img
 							loading="lazy"
-							src="./assets/icons/check.svg"
-							alt="круглая иконка черно-белой галочки &#10003;"
+							src="./assets/icons/headset.png"
+							alt="черная иконка гарнитуры"
 						/>
-						<div class="description">
-							<p class="bold">Многолетний опыт</p>
-							<p>Наша компания существует уже 9 лет</p>
-						</div>
-					</section>
-					<section class="reason">
-						<img
-							loading="lazy"
-							src="./assets/icons/check.svg"
-							alt="круглая иконка черно-белой галочки &#10003;"
-						/>
-						<div class="description">
-							<p class="bold">Всегда на связи</p>
+						<div>
+							<p class="heading">Всегда на связи</p>
 							<p>Спокойно разрешаем любые ситуации</p>
 						</div>
-					</section>
-					<section class="reason">
+					</div>
+					<div class="reason">
 						<img
 							loading="lazy"
-							src="./assets/icons/check.svg"
-							alt="круглая иконка черно-белой галочки &#10003;"
+							src="./assets/icons/experience.png"
+							alt="черная иконка гарнитуры"
 						/>
-						<div class="description">
-							<p class="bold">Надежность</p>
+						<div>
+							<p class="heading">Многолетний опыт</p>
+							<p>Наша компания существует уже 9 лет</p>
+						</div>
+					</div>
+					<div class="reason">
+						<img
+							loading="lazy"
+							src="./assets/icons/reliability.png"
+							alt="черная иконка гарнитуры"
+						/>
+						<div>
+							<p class="heading">Надежность</p>
 							<p>Стараемся доставить груз вовремя</p>
 						</div>
-					</section>
+					</div>
 				</section>
 			</section>
 
-			<section class="services" id="services" style="display: none">
-				<div class="intro">
-					<h2>Предоставляемые услуги</h2>
-					<p>
-						При перевозке крупногабаритных грузов помимо разрешения
-						предусмотрено сопровождение транспорта.
-						<a href="#contact">Узнать больше.</a>
-					</p>
-				</div>
-				<ul>
-					<li class="forwarding">
-						<div class="service">
-							<h3>Экспедирование</h3>
-							<p class="bold">
-								Организация и сопровождение перевозки крупногабаритных грузов.
-								Например, мебели или строительных материалов.
-							</p>
-							<a href="#contact">
-								<p>Связаться с нами</p>
-								<img
-									loading="lazy"
-									src="./assets/icons/arrow-down.png"
-									alt="иконка белой стрелки, указывающей вниз"
-								/>
-							</a>
-						</div>
-					</li>
-					<li class="oversize">
-						<div class="service">
-							<h3>Негабаритные перевозки</h3>
-							<p class="bold">
-								Грузы, которые из-за своих больших размеров или веса требуют
-								особого подхода и специального оборудования.
-							</p>
-							<a href="#contact">
-								<p>Связаться с нами</p>
-								<img
-									loading="lazy"
-									src="./assets/icons/arrow-down.png"
-									alt="иконка белой стрелки, указывающей вниз"
-								/>
-							</a>
-						</div>
-					</li>
-					<li class="eurofreight">
-						<div class="service">
-							<h3>Перевозки еврофурами</h3>
-							<p class="bold">
-								Еврофура состоит из грузовика и полуприцепа, что позволяет
-								перевозить больше груза по сравнению с фурой.
-							</p>
-							<a href="#contact">
-								<p>Связаться с нами</p>
-								<img
-									loading="lazy"
-									src="./assets/icons/arrow-down.png"
-									alt="иконка белой стрелки, указывающей вниз"
-								/>
-							</a>
-						</div>
-					</li>
-				</ul>
-			</section>
-
-			<section class="process" id="process" style="display: none">
+			<section class="process" id="process">
 				<div class="intro">
 					<h2>Как мы перевозим груз</h2>
 					<p>
@@ -331,134 +307,170 @@
 				/>
 			</section>
 
-			<section class="contact" style="display: none">
+			<section class="our-trucks" id="our-trucks">
+				<div class="intro">
+					<h2>Наш транспорт</h2>
+					<p>
+						Наш грузовой транспорт надежный, крепкий и быстрый, способный
+						уверенно преодолевать любые препятствия на пути к пункту назначения.
+						Наша команда профессионалов всегда готова поддерживать клиентов на
+						всех этапах транспортировки.
+					</p>
+				</div>
+				<section class="cards">
+					<section class="card">
+						<div class="img">
+							<img
+								src="./assets/trucks/samples/1.png"
+								alt="Monster Friend 8051 превью"
+							/>
+						</div>
+						<p class="btn-outlined">Monster Friend 8051</p>
+					</section>
+					<section class="card">
+						<div class="img">
+							<img
+								src="./assets/trucks/samples/2.png"
+								alt="SpinHead 1050E20 превью"
+							/>
+						</div>
+						<p class="btn-outlined">SpinHead 1050E20</p>
+					</section>
+					<section class="card">
+						<div class="img">
+							<img
+								src="./assets/trucks/samples/3.png"
+								alt="OldGuy N4202 превью"
+							/>
+						</div>
+						<p class="btn-outlined">OldGuy N4202</p>
+					</section>
+				</section>
+			</section>
+
+			<section id="get-in-touch">
 				<div class="intro">
 					<p>Написать или позвонить</p>
 					<h2>Свяжитесь с нами</h2>
 				</div>
-				<ul id="contact" itemscope itemtype="http://schema.org/Organization">
-					<li>
-						<div class="el" id="email-to-copy">
-							<img
-								loading="lazy"
-								loading="lazy"
-								src="./assets/icons/copy.png"
-								alt="черно-белая иконка копирования"
-								title="Нажмите, чтобы скопировать"
-							/>
-							<p class="copy" itemprop="email">zorina.olga.73@mail.ru</p>
-						</div>
-					</li>
-					<li>
-						<div class="el">
-							<img
-								loading="lazy"
-								src="./assets/icons/copy.png"
-								alt="черно-белая иконка копирования"
-								title="Нажмите, чтобы скопировать"
-								id="number-to-copy-1"
-							/>
-							<a href="tel:+7 912-591-05-44" class="copy" itemprop="telephone"
-								>+7 912-591-05-44</a
-							>
-						</div>
-					</li>
-					<li>
-						<div class="el">
-							<img
-								loading="lazy"
-								src="./assets/icons/copy.png"
-								alt="черно-белая иконка копирования"
-								title="Нажмите, чтобы скопировать"
-								id="number-to-copy-2"
-							/>
-							<a href="tel:+7 967-903-95-97" class="copy" itemprop="telephone"
-								>+7 967-903-95-97</a
-							>
-						</div>
-					</li>
-					<li>
-						<a
-							href="https://e.mail.ru/compose/?subject=Сотрудничество с СОМАКС&body=Здравствуйте,%20Ольга!&to=zorina.olga.73@mail.ru"
-							target="_blank"
-							class="text-by-mailru"
+				<section class="get-in-touch">
+					<ul itemscope itemtype="http://schema.org/Organization">
+						<li
+							class="copy"
+							data-copy="zorina.olga.73@mail.ru"
+							title="Нажмите, чтобы скопировать email"
 						>
-							Написать на mail.ru
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://api.whatsapp.com/send?phone=79679039597&text=Здравствуйте,%20Ольга!"
-							target="_blank"
-							class="btn"
+							<img
+								loading="lazy"
+								src="./assets/icons/copy.png"
+								alt="черная иконка копирования"
+								itemprop="email"
+							/>
+							zorina.olga.73@mail.ru
+						</li>
+						<li
+							class="copy"
+							data-copy="+7 912-591-05-44"
+							title="Нажмите, чтобы скопировать номер"
 						>
-							Написать в WhatsApp
-						</a>
-					</li>
-				</ul>
+							<img
+								loading="lazy"
+								src="./assets/icons/copy.png"
+								alt="черная иконка копирования"
+							/>
+							<a href="tel:+7 912-591-05-44" itemprop="telephone">
+								+7 912-591-05-44
+							</a>
+						</li>
+						<li
+							class="copy"
+							data-copy="+7 967-903-95-97"
+							title="Нажмите, чтобы скопировать номер"
+						>
+							<img
+								loading="lazy"
+								src="./assets/icons/copy.png"
+								alt="черная иконка копирования"
+							/>
+							<a href="tel:+7 967-903-95-97" itemprop="telephone">
+								+7 967-903-95-97
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://e.mail.ru/compose/?subject=Сотрудничество с СОМАКС&body=Здравствуйте,%20Ольга!&to=zorina.olga.73@mail.ru"
+								target="_blank"
+								class="btn-filled"
+							>
+								Написать на mail.ru
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://api.whatsapp.com/send?phone=79679039597&text=Здравствуйте,%20Ольга!"
+								target="_blank"
+								class="btn-outlined"
+							>
+								Написать в WhatsApp
+							</a>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</main>
 
-		<footer style="display: none">
-			<a href="#" class="logo">
-				<img
-					loading="lazy"
-					src="./assets/footer/logo.svg"
-					alt="логотип SO | MAKS"
-				/>
+		<footer>
+			<div class="logo">
+				<img src="./assets/logo/logo-white.svg" alt="SO | MAKS логотип" />
 				<p>Грузовые перевозки автомобильным транспортом</p>
-			</a>
-			<section
-				class="footer-contacts"
-				itemscope
-				itemtype="http://schema.org/Organization"
-			>
-				<div class="footer-contact">
-					<img
-						loading="lazy"
-						src="./assets/footer/email.png"
-						alt="белая иконка закрытого письма"
-					/>
+			</div>
+			<div class="contacts" itemscope itemtype="http://schema.org/Organization">
+				<div class="contact">
+					<img src="./assets/icons/email-white.png" alt="белая иконка email" />
 					<p itemprop="email">zorina.olga.73@mail.ru</p>
 				</div>
-				<div class="footer-contact">
+				<div class="contact">
 					<img
-						loading="lazy"
-						src="./assets/footer/phone.png"
+						src="./assets/icons/phone-white.png"
 						alt="белая иконка телефона"
 					/>
-					<p itemprop="telephone">+7 912-591-05-44</p>
+					<a href="tel:+7 912-591-05-44" itemprop="telephone">
+						+7 912-591-05-44
+					</a>
 				</div>
-				<div class="footer-contact">
+				<div class="contact">
 					<img
-						loading="lazy"
-						src="./assets/footer/phone.png"
+						src="./assets/icons/phone-white.png"
 						alt="белая иконка телефона"
 					/>
-					<p itemprop="telephone">+7 967-903-95-97</p>
+					<a href="tel:+7 967-903-95-97" itemprop="telephone">
+						+7 967-903-95-97
+					</a>
 				</div>
-				<div class="footer-contact">
+				<div class="contact">
 					<img
-						loading="lazy"
-						src="./assets/footer/building.png"
-						alt="белая иконка здания"
+						src="./assets/icons/office-building-white.png"
+						alt="белая иконка офисного здания"
 					/>
 					<p itemprop="address">Россия, г. Пермь</p>
 				</div>
-			</section>
+			</div>
+			<div class="legal">
+				<p>ИНН 5904306390</p>
+				<p>ОГРН 1155958045671</p>
+				<p>КПП 590401001</p>
+				<p>ОКПО 12034274</p>
+			</div>
 		</footer>
 
-		<section
-			style="display: none"
-			class="info"
-			aria-label="список прав на веб-сайт: компания, разработчик и откуда иконки"
-		>
+		<section class="rights" aria-label="список прав">
 			<p>© Все права защищены 2024 ООО “ГП “СОМАКС”</p>
 			<a href="https://github.com/sohee-commits">Разработчик сайта</a>
 			<a href="https://icons8.com/icons">
 				<img
 					loading="lazy"
 					src="./assets/icons/icons8.png"
+					title="все использованные на сайте иконки принадлежат icons8."
 					alt="черно-белая иконка icons8. использованные иконки от icons8: email, phone, building, check, arrow down, truck, copy, icons8."
 				/>
 				Icons by icons8
