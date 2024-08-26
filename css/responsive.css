@@ -92,19 +92,22 @@
 
 	h1 {
 		font-size: 2rem;
+		text-align: center;
 	}
 
 	h2 {
 		font-size: 1.5rem;
+		text-align: center;
 	}
 
 	p,
 	a {
 		font-size: 0.875rem;
+		text-align: center;
 	}
 
 	.rights * {
-		font-size: 0.625px;
+		text-align: center;
 	}
 
 	.get-in-touch .copy,
@@ -130,6 +133,12 @@
 	main > section:not(.summary),
 	.summary .text {
 		padding: 4rem 1rem;
+	}
+
+	/* rights container */
+
+	.rights {
+		flex-direction: column;
 	}
 }
 
