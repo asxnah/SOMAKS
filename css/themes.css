@@ -64,7 +64,7 @@
 	}
 
 	.services .card p {
-		border: none !important;
+		border: var(--black) !important;
 		background-color: none !important;
 		color: var(--white) !important;
 	}
