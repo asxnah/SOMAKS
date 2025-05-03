@@ -39,8 +39,19 @@ svg {
 	}
 
 	.btn-outlined {
-		border: 0.08rem solid var(--white);
+		border: 0.08rem solid var(--white) !important;
 		color: var(--white);
+	}
+
+	#summary *,
+	#services .intro *,
+	#get-in-touch h2,
+	#get-in-touch li {
+		color: var(--white);
+	}
+
+	#services .card {
+		border: 1px solid var(--white);
 	}
 
 	@media (hover: hover) {
