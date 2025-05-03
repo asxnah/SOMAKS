@@ -1,0 +1,175 @@
+@media (prefers-color-scheme: dark) {
+	:root {
+		color-scheme: light dark;
+	}
+
+	html {
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	body {
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	img,
+	svg {
+		color-scheme: normal;
+		forced-color-adjust: none;
+		filter: none;
+	}
+
+	* {
+		color: var(--white);
+	}
+
+	main > section:not(.summary),
+	.summary .text {
+		padding: 2rem 8rem;
+	}
+
+	.rights img,
+	.summary img,
+	#get-in-touch img,
+	.header-location img {
+		filter: invert(1) !important;
+	}
+
+	[class^='btn']:active {
+		outline: 0.2rem solid rgba(1, 11, 19, 0.2);
+	}
+
+	.btn-filled {
+		border: 0.08rem solid var(--black);
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	.btn-outlined {
+		border: 0.08rem solid var(--white);
+		color: var(--white);
+	}
+
+	header {
+		border-bottom: 0.08rem solid var(--white);
+		border-top: 0.08rem solid var(--white);
+	}
+
+	.get-in-touch .copy {
+		border-bottom: 0.08rem solid var(--white);
+	}
+
+	.services .card {
+		border-color: var(--white) !important;
+	}
+
+	.about ul > * {
+		color: var(--black);
+	}
+
+	.why-us .reason:first-child {
+		background-color: #eee9f0;
+	}
+
+	.why-us .reason:nth-child(2) {
+		background-color: #e7ebef;
+	}
+
+	.why-us .reason:last-child {
+		background-color: #e9eff0;
+	}
+
+	.reason * {
+		color: var(--black);
+	}
+
+	.process {
+		background-color: #cedace;
+	}
+
+	.process * {
+		color: var(--black);
+	}
+
+	.get-in-touch .intro p {
+		color: #798182;
+	}
+
+	.get-in-touch {
+		background-image: none;
+	}
+
+	.get-in-touch ul {
+		padding: 4rem;
+		border: 0.08rem solid var(--white);
+		border-radius: 1rem;
+	}
+
+	footer {
+		border-top: 0.08rem solid var(--white);
+		border-bottom: 0.08rem solid var(--white);
+	}
+
+	footer * {
+		color: var(--white);
+	}
+
+	@media (hover: hover) {
+		header a[href='#about']:hover {
+			background-color: var(--white);
+			color: var(--black);
+		}
+
+		.btn-outlined:hover {
+			background-color: var(--black);
+			border-color: var(--black);
+			color: var(--white);
+		}
+
+		.btn-filled:hover {
+			background: var(--white);
+			border-color: var(--white);
+			color: var(--black);
+		}
+
+		.services .card p:hover {
+			color: var(--black);
+			background-color: var(--white);
+		}
+	}
+
+	@media (hover: none) {
+		header a[href='#about']:active {
+			background-color: var(--white);
+			color: var(--black);
+		}
+
+		.btn-outlined:active {
+			background-color: var(--black);
+			color: var(--white);
+		}
+
+		.btn-filled:active {
+			background: none;
+			color: var(--black);
+		}
+
+		.services .card p:active {
+			color: var(--black);
+			background-color: var(--white);
+		}
+
+		@media (width < 500px) {
+			main > section:not(.summary),
+			.summary .text {
+				padding: 1rem;
+				gap: 1rem;
+			}
+
+			.get-in-touch ul {
+				padding: 1rem;
+			}
+		}
+	}
+}

@@ -27,63 +27,6 @@ svg {
 	filter: none !important;
 }
 
-@media (prefers-color-scheme: dark) {
-	body {
-		background-color: var(--black);
-		color: var(--white);
-	}
-
-	html {
-		background-color: var(--black);
-		color: var(--white);
-	}
-
-	.btn-outlined {
-		border: 0.08rem solid var(--white) !important;
-		color: var(--white);
-	}
-
-	#summary *,
-	#services .intro *,
-	#get-in-touch h2,
-	#get-in-touch li {
-		color: var(--white);
-	}
-
-	#services .card {
-		border: 1px solid var(--white);
-	}
-
-	@media (hover: hover) {
-		.btn-outlined:hover {
-			background-color: var(--black);
-			color: var(--white);
-		}
-
-		.services .card p:active {
-			color: var(--white);
-			background-color: var(--black);
-		}
-	}
-
-	@media (hover: none) {
-		.btn-outlined:active {
-			background-color: var(--black);
-			color: var(--white);
-		}
-
-		.btn-filled:active {
-			background: none;
-			color: var(--black);
-		}
-
-		.services .card p:active {
-			color: var(--white);
-			background-color: var(--black);
-		}
-	}
-}
-
 * {
 	margin: 0;
 	padding: 0;
