@@ -24,6 +24,14 @@ body {
 		color: var(--white);
 	}
 
+	.process {
+		background-color: var(--white) !important;
+	}
+
+	.process * {
+		stroke: var(--black) !important;
+	}
+
 	@media (hover: hover) {
 		.btn-outlined:hover {
 			background-color: var(--black);
