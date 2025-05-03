@@ -64,6 +64,10 @@
 		border-color: var(--white) !important;
 	}
 
+	.services .card p {
+		border: none !important;
+	}
+
 	.about ul > * {
 		color: var(--black);
 	}
