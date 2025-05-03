@@ -140,15 +140,49 @@
 	.rights {
 		flex-direction: column;
 	}
+
+	footer * {
+		text-align: left;
+	}
 }
 
-@media (max-width: 340px) {
+@media (max-width: 370px) {
+	.reason {
+		align-items: center;
+	}
+
+	header a[href='#about'] {
+		padding: 0;
+		border: none;
+	}
+	header a[href='#about']:hover {
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	header a[href='#services'] {
+		padding: 0.75rem 1.5rem;
+		width: fit-content;
+
+		display: block;
+
+		border: 0.08rem solid var(--white);
+		border-radius: 4rem;
+	}
+	header a[href='#services']:hover {
+		background-color: var(--white);
+		color: var(--black);
+	}
+
 	.service-card p {
 		border-radius: 2rem;
 		font-size: 1rem;
 	}
 
 	.about ul > * {
+		flex-direction: column;
+
 		border-radius: 2rem;
+		text-align: center;
 	}
 }

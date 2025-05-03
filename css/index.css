@@ -68,18 +68,8 @@ ul {
 	color: var(--white);
 }
 
-.btn-filled:hover {
-	background: none;
-	color: var(--black);
-}
-
 .btn-outlined {
 	border: 0.08rem solid var(--black);
-}
-
-.btn-outlined:hover {
-	background-color: var(--black);
-	color: var(--white);
 }
 
 .cards {
@@ -159,11 +149,6 @@ header a[href='#about'] {
 	border-radius: 4rem;
 }
 
-header a[href='#about']:hover {
-	background-color: var(--white);
-	color: var(--black);
-}
-
 .desktop-header {
 	padding: 1rem 4rem;
 
@@ -199,12 +184,6 @@ header a[href='#about']:hover {
 
 	position: absolute;
 	content: '';
-}
-
-.desktop-header a:hover::after {
-	transform: scaleX(1);
-	transition: transform 0.25s ease-out;
-	transform-origin: center;
 }
 
 .summary {
@@ -253,11 +232,6 @@ header a[href='#about']:hover {
 .get-in-touch .copy img {
 	width: 1.5rem;
 	height: 1.5rem;
-}
-
-.get-in-touch .copy img:hover {
-	width: 1.6rem;
-	height: 1.6rem;
 }
 
 main > section:not(.summary) {
@@ -435,4 +409,70 @@ footer .legal {
 .rights img {
 	width: 0.75rem;
 	height: 0.75rem;
+}
+
+@media (hover: hover) {
+	header a[href='#about']:hover {
+		background-color: var(--white);
+		color: var(--black);
+	}
+
+	.btn-outlined:hover {
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	.btn-filled:hover {
+		background: none;
+		color: var(--black);
+	}
+
+	.services .card p:hover {
+		color: var(--black);
+		background-color: var(--white);
+	}
+
+	.get-in-touch .copy img:hover {
+		width: 1.6rem;
+		height: 1.6rem;
+	}
+
+	.desktop-header a:hover::after {
+		transform: scaleX(1);
+		transition: transform 0.25s ease-out;
+		transform-origin: center;
+	}
+}
+
+@media (hover: none) {
+	header a[href='#about']:active {
+		background-color: var(--white);
+		color: var(--black);
+	}
+
+	.btn-outlined:active {
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	.btn-filled:active {
+		background: none;
+		color: var(--black);
+	}
+
+	.services .card p:active {
+		color: var(--black);
+		background-color: var(--white);
+	}
+
+	.get-in-touch .copy img:active {
+		width: 1.6rem;
+		height: 1.6rem;
+	}
+
+	.desktop-header a:active::after {
+		transform: scaleX(1);
+		transition: transform 0.25s ease-out;
+		transform-origin: center;
+	}
 }
