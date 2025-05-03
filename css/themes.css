@@ -41,14 +41,13 @@
 	}
 
 	.btn-filled {
-		border: 0.08rem solid var(--black);
-		background-color: var(--black);
+		border: 0.08rem solid var(--white);
 		color: var(--white);
 	}
 
 	.btn-outlined {
-		border: 0.08rem solid var(--white);
-		color: var(--white);
+		background-color: var(--white);
+		color: var(--black);
 	}
 
 	header {
@@ -125,16 +124,14 @@
 			color: var(--black);
 		}
 
-		.btn-outlined:hover {
-			background-color: var(--black);
-			border-color: var(--black);
-			color: var(--white);
+		.btn-filled:hover {
+			background-color: var(--white);
+			color: var(--black);
 		}
 
-		.btn-filled:hover {
-			background: var(--white);
-			border-color: var(--white);
-			color: var(--black);
+		.btn-outlined:hover {
+			border: 0.08rem solid var(--white);
+			color: var(--white);
 		}
 
 		.services .card p:hover {
