@@ -1,4 +1,6 @@
 :root {
+	color-scheme: light dark;
+
 	--black: #1b1d1e;
 	--white: #f8f9fa;
 }
@@ -16,6 +18,13 @@ html {
 body {
 	background-color: var(--white);
 	color: var(--black);
+}
+
+img,
+svg {
+	color-scheme: normal;
+	forced-color-adjust: none;
+	filter: none !important;
 }
 
 @media (prefers-color-scheme: dark) {
