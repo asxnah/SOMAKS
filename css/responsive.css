@@ -110,6 +110,10 @@
 		text-align: center;
 	}
 
+	.reasons {
+		flex-direction: column;
+	}
+
 	.get-in-touch .copy,
 	.get-in-touch .copy * {
 		font-size: 1.25rem;
