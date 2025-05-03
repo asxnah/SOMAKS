@@ -8,6 +8,11 @@ html {
 	overflow-x: hidden;
 }
 
+html {
+	background-color: var(--white);
+	color: var(--black);
+}
+
 body {
 	background-color: var(--white);
 	color: var(--black);
@@ -15,6 +20,11 @@ body {
 
 @media (prefers-color-scheme: dark) {
 	body {
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	html {
 		background-color: var(--black);
 		color: var(--white);
 	}
