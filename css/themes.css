@@ -65,6 +65,8 @@
 
 	.services .card p {
 		border: none !important;
+		background-color: none !important;
+		color: var(--white) !important;
 	}
 
 	.about ul > * {
