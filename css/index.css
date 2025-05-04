@@ -114,8 +114,8 @@ ul {
 }
 
 .card p:first-of-type {
+	border: 0.08rem solid var(--black);
 	font-size: 1.25rem;
-
 	cursor: pointer;
 }
 
@@ -449,11 +449,6 @@ footer .legal {
 		color: var(--black);
 	}
 
-	.services .card p:hover {
-		color: var(--black);
-		background-color: var(--white);
-	}
-
 	.get-in-touch .copy img:hover {
 		width: 1.6rem;
 		height: 1.6rem;
@@ -480,11 +475,6 @@ footer .legal {
 	.btn-filled:active {
 		background: none;
 		color: var(--black);
-	}
-
-	.services .card p:active {
-		color: var(--black);
-		background-color: var(--white);
 	}
 
 	.get-in-touch .copy img:active {

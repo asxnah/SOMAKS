@@ -1,25 +1,21 @@
 @media (max-width: 1240px) {
-	#services .card {
+	.services .card {
 		padding: 1rem;
 
 		border: 0.08rem solid var(--black);
 		border-radius: 1rem;
 	}
 
-	#services .card p {
-		padding: 0;
-		border: none;
-		vertical-align: top;
+	.services .card p {
+		border: none !important;
 	}
 }
 
 @media (max-width: 1100px) {
-	/* hide desktop header */
 	.desktop-header {
 		display: none;
 	}
 
-	/* mobile header */
 	.m-header {
 		padding: 1rem;
 
@@ -69,7 +65,7 @@
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 880px) {
 	.process img:first-of-type {
 		display: none;
 	}
@@ -77,18 +73,12 @@
 	.process img:last-of-type {
 		display: block;
 	}
-}
-
-@media (max-width: 820px) {
-	/* paddings */
 
 	main > section:not(.summary),
 	.summary .text,
 	footer {
 		padding: 4rem 1rem;
 	}
-
-	/* cards */
 
 	.cards {
 		flex-direction: column;
@@ -100,7 +90,6 @@
 		padding-bottom: 1rem;
 		border-bottom: 0.06rem solid rgba(1, 11, 19, 0.1);
 	}
-	/* fonts */
 
 	h1 {
 		font-size: 2rem;
@@ -131,27 +120,19 @@
 		font-size: 1.25rem;
 	}
 
-	/* card heading */
-
 	.card p {
 		font-size: 1rem;
 	}
-
-	/* get in touch copy image */
 
 	.get-in-touch .copy img {
 		width: 1.25rem;
 		height: 1.25rem;
 	}
 
-	/* paddings */
-
 	main > section:not(.summary),
 	.summary .text {
 		padding: 4rem 1rem;
 	}
-
-	/* rights container */
 
 	.rights {
 		flex-direction: column;
@@ -186,11 +167,6 @@
 	header a[href='#services']:hover {
 		background-color: var(--white);
 		color: var(--black);
-	}
-
-	.service-card p {
-		border-radius: 2rem;
-		font-size: 1rem;
 	}
 
 	.about ul > * {

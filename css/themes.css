@@ -63,12 +63,6 @@
 		border-color: var(--white) !important;
 	}
 
-	.services .card p {
-		border: var(--black) !important;
-		background-color: none !important;
-		color: var(--white) !important;
-	}
-
 	.about ul > * {
 		color: var(--black);
 	}
@@ -135,11 +129,6 @@
 			border: 0.08rem solid var(--white);
 			color: var(--white);
 		}
-
-		.services .card p:hover {
-			color: var(--black);
-			background-color: var(--white);
-		}
 	}
 
 	@media (hover: none) {
@@ -157,22 +146,17 @@
 			background: none;
 			color: var(--black);
 		}
+	}
 
-		.services .card p:active {
-			color: var(--black);
-			background-color: var(--white);
+	@media (width < 500px) {
+		main > section:not(.summary),
+		.summary .text {
+			padding: 1rem;
+			gap: 1rem;
 		}
 
-		@media (width < 500px) {
-			main > section:not(.summary),
-			.summary .text {
-				padding: 1rem;
-				gap: 1rem;
-			}
-
-			.get-in-touch ul {
-				padding: 1rem;
-			}
+		.get-in-touch ul {
+			padding: 1rem;
 		}
 	}
 }
