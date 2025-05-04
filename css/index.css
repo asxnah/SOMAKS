@@ -110,8 +110,10 @@ ul {
 
 .card p {
 	width: 100%;
-
 	text-align: center;
+}
+
+.card p:first-of-type {
 	font-size: 1.25rem;
 
 	cursor: pointer;
