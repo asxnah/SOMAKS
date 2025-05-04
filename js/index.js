@@ -2,6 +2,7 @@ let controlNav = () => {
 	let nav = document.querySelector(`.m-header nav`);
 	let openNav = document.querySelector(`#open-nav`);
 	let closeNav = document.querySelector(`#close-nav`);
+	let navLinks = nav.querySelectorAll(`a`);
 
 	openNav.addEventListener(`click`, () => {
 		nav.classList.add(`show`);
@@ -10,25 +11,27 @@ let controlNav = () => {
 	closeNav.addEventListener(`click`, () => {
 		nav.classList.remove(`show`);
 	});
+
+	navLinks.forEach((link) => {
+		link.addEventListener(`click`, () => {
+			nav.classList.remove(`show`);
+		});
+	});
 };
 
 let copyElements = () => {
 	let copyList = document.querySelectorAll(`.copy`);
 
-	// for each element with class copy
 	copyList.forEach((copyEl) => {
-		// on click
 		copyEl.addEventListener(`click`, () => {
-			// get what to copy and save it to clipboard
 			let copyContent = copyEl.getAttribute(`data-copy`);
 			navigator.clipboard
 				.writeText(copyContent)
-				// notify user
 				.then(() => {
-					alert(`Скопировано: ${copyContent}`);
+					alert(`Скопировано ${copyContent}`);
 				})
 				.catch((err) => {
-					alert(`Что-то пошло не так: ${err}`);
+					alert(`Что-то пошло не так. Попробуйте ещё раз позже.`);
 				});
 		});
 	});
