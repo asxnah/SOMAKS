@@ -79,7 +79,7 @@
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 820px) {
 	/* paddings */
 
 	main > section:not(.summary),
@@ -100,9 +100,6 @@
 		padding-bottom: 1rem;
 		border-bottom: 0.06rem solid rgba(1, 11, 19, 0.1);
 	}
-}
-
-@media (max-width: 500px) {
 	/* fonts */
 
 	h1 {
@@ -163,9 +160,7 @@
 	footer * {
 		text-align: left;
 	}
-}
 
-@media (max-width: 370px) {
 	.reason {
 		align-items: center;
 	}
