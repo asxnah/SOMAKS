@@ -27,6 +27,11 @@
 		position: relative;
 	}
 
+	.m-header li {
+		display: flex;
+		justify-content: start;
+	}
+
 	.m-header ul {
 		display: flex;
 		flex-direction: column;
