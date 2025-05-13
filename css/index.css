@@ -114,7 +114,6 @@ ul {
 }
 
 .card p:first-of-type {
-	border: 0.08rem solid var(--black);
 	font-size: 1.25rem;
 	cursor: pointer;
 }
